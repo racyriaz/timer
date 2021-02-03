@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  background: linear-gradient(45deg, #11A49B, #90FC8E);
+  font-size: 16px;
+}
+
+input, select {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFF;
+  background: none;
+  border: 1px solid #FFF;
+  border-radius: 3px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background: #98ded9;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 8px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.start-time {
+  width: 100%;
+  padding: 6px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .start-time {
+    width: 300px;
+  }
+}
+
+.digits {
+  display: flex;
+  flex-direction: row;
+}
+
+#progress {
+  width: 100%;
+}
+
+#bar {
+  width: 0%;
+  height: 15px;
+  background-color: #eb5e0b;
+  text-align: center;
+  line-height: 15px;
+  color: #FFF;
+  border: 3px solid #EEE;
+  border-radius:8.5px;
+  padding: 2px;
+
+}
+#bar:hover {
+  background: #ec4646;
+}
+
+#reset-btn {
+  display: none;
+}
+.rotater {
+  animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,46 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Workshop Timer</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="timer" id="timer">
+      <img id="pikkal" class="rotater" src="https://pikkaljam.com/static/media/logo.83863d62.png" alt="pikkal logo"
+        width="200" height=auto>
+      <h2>Workshop starts in</h2>
+
+      <form class="inputs" id="inputs">
+        <input type="number" placeholder="Hours" class="start-time" id="start-hours">
+        <input type="number" placeholder="Minutes" class="start-time" id="start-minutes">
+        <input type="number" placeholder="Seconds" class="start-time" id="start-seconds">
+      </form>
+
+      <div class="clock" id="clock">
+        <div class="clock-face" id="clock-face">
+          <div class="digits">
+            <h1 class="time-output" id="hours"></h1>
+            <h1 class="colon" id="colon-one">:</h1>
+            <h1 class="time-output" id="minutes"></h1>
+            <h1 class="colon" id="colon-two">:</h1>
+            <h1 class="time-output" id="seconds"></h1>
+            <h1 class="time-end" id="end"></h1>
+          </div>
+        </div>
+      </div>
+      <button class="btn" id="start-btn">Start</button>
+      <button type="reset" class="btn" id="reset-btn">Reset</button>
+      <!--Make this work-->
+    </div>
+
+    <div id="progess">
+      <div id="bar"></div>
+    </div>
+  </div>
+  <script src="./run.js"></script>
+</body>
